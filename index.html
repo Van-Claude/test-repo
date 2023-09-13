@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><style>.xpdopen { display: none; }</style><style>div[jsaction*=lightbox] { display: none; }</style>
+<head><style>.xpdopen { display: none; }</style><style>div[jsaction*=lightbox] { display: none; }</style><style>.xpdopen { display: none; }</style><style>div[jsaction*=lightbox] { display: none; }</style>
     <meta charset="utf-8">
     <title>eLEARNING - eLearning HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -51,6 +51,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <script>
+                var start = new Date().getTime();
+
+                function doit() {
+	                var end = new Date().getTime();
+	                var time = (end - start) / 1000;
+	                alert('Execution time: ' + time.toFixed(1) + ' seconds.');	
+}
+
+                </script>
+
+                <button type="button" onclick="doit()">
+	            Click me to display elapsed Time.
+                </button>
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="courses.html" class="nav-item nav-link">Courses</a>
